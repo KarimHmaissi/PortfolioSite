@@ -80,8 +80,8 @@
         <h1 class="hero-title">Karim Hmaissi</h1>
         <h3 class="hero-subtitle">I am available for full time hire.</h3>
         <a class="margin-top btn btn-lg btn-primary" href=
-        "#fakelink">Github</a> <a class="margin-top btn btn-lg btn-primary"
-        href="#fakelink">Download CV</a>
+        "https://github.com/KarimHmaissi?tab=repositories">Github</a> <a class="margin-top btn btn-lg btn-primary"
+        href="/KarimHmaissi.pdf">Download CV</a>
       </div>
 
       <div id="video-player-holder" style="height:750px"></div>
@@ -131,12 +131,12 @@
               <p class="subtitle">A Customer Intelligence Platform</p>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+            <p>Twitter Intelligence downloads a twitter users followers and followers tweets in order to mine this data for customer intelligence. The software then parses and displays this data for the user.</p>
+
+            <p>This allows users of corporate twitter accounts to better understand their followers, and therefore target their social media marketing strategy to better target those followers.</p>
 
             <div class="text-center">
-              <a class=" margin-top btn btn-primary" href="#fakelink">View site
+              <a class=" margin-top btn btn-primary" href="http://twitterintelligence.eu01.aws.af.cm/">View site
               live</a> <a class=" margin-top btn btn-primary" href=
               "https://github.com/KarimHmaissi/tweetintelligence">Github
               repo</a>
@@ -157,13 +157,14 @@
               <p class="subtitle">A Twitter Grails App</p>
             </div>
 
-            <p>This is a aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>The idea machine downloads tweets from twitter that contain an idea for a new app or website. Some are insane, some are just awful and some are absolute gold.</p>
+
+            <p>It works by filtering out tweets that contain phrases such as "Should make an app" and saving them to The Idea Machine's stream.</p>
+
+            <p>The app allows user to vote for their favourite ideas. Ideas are sorted by hot(the highest voted ideas) and new(brand new tweets from the official twitter stream).</p>
 
             <div class="text-center">
-              <a class=" margin-top btn btn-primary" href="#fakelink">View site
+              <a class=" margin-top btn btn-primary" href="http://theideamachine.eu01.aws.af.cm/">View site
               live</a> <a class=" margin-top btn btn-primary" href=
               "https://github.com/KarimHmaissi/TheIdeaMachine">Github repo</a>
             </div>
@@ -216,7 +217,7 @@
 
           <h3 class="hero-subtitle">I plan design and code
           websites</h3><a class=" margin-top btn btn-lg btn-primary" href=
-          "#fakelink">Get in touch</a>
+          "/KarimHmaissi.pdf">Download CV</a>
         </div>
       </div>
 
@@ -305,22 +306,23 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
-              <form class="white-text">
+            <div id="form-holder" class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
+
+              <form id="contact-form" class="white-text">
                 <div class="form-group">
-                  <label for="name">Name</label> <input class="form-control"
-                  id="name" placeholder="Name" type="name"> <label for=
-                  "email">Email address</label> <input class="form-control" id=
-                  "email" placeholder="Enter email" type="email"> <label for=
-                  "email">Message</label> 
-                  <textarea class="form-control" rows="3"></textarea>
+                  <label for="name">Name</label> 
+                  <input class="form-control" id="name" placeholder="Name" type="name"> 
+                  <label for="email">Email address</label> 
+                  <input class="form-control" id="email" placeholder="Enter email" type="email"> 
+                  <label for="email">Message</label> 
+                  <textarea class="form-control" id="message" rows="3"></textarea>
                 </div>
 
                 <div class="text-center">
-                  <button class="btn btn-primary" type=
-                  "submit">Contact</button>
+                  <button id="submit-form" class="btn btn-primary" type="submit">Contact</button>
                 </div>
               </form>
+
             </div>
           </div>
 
@@ -333,6 +335,17 @@
   <!-- /container -->
 
   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47002335-1', 'karimhmaissi.com');
+    ga('send', 'pageview');
+
+  </script>
+
+  <script>
 
       $(function(){
         setup.init();
@@ -343,6 +356,6 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   <script src="http://vjs.zencdn.net/4.2/video.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/videoScroller.js"></script>
+  <script src="js/videoscroller.js"></script>
 </body>
 </html>
